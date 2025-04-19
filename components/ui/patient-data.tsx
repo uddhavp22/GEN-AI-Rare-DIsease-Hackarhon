@@ -6,12 +6,12 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 // Mock patient data
 const patientData = {
   diagnoses: [
-    { name: "Type 2 Diabetes Mellitus", icd10: "E11.9", date: "2020-03-15" },
-    { name: "Essential Hypertension", icd10: "I10", date: "2019-11-22" },
-    { name: "Hyperlipidemia", icd10: "E78.5", date: "2020-03-15" },
+    { name: "Cerebral Cavernous Malformation", icd10: "Q28.3", date: "2020-03-15" },
+    { name: "Epileptic Seizure", icd10: "G40.509", date: "2019-11-22" },
+    { name: "Intracranial Hemorrhage", icd10: "I62.9", date: "2020-03-15" },
   ],
   currentMedications: [
-    { name: "Metformin", dosage: "1000mg", frequency: "Twice daily", startDate: "2020-03-20" },
+    { name: "Carbamazepine", dosage: "1000mg", frequency: "Twice daily", startDate: "2020-03-20" },
     { name: "Lisinopril", dosage: "10mg", frequency: "Once daily", startDate: "2019-12-01" },
     { name: "Atorvastatin", dosage: "20mg", frequency: "Once daily at bedtime", startDate: "2020-03-20" },
   ],
@@ -35,20 +35,20 @@ const patientData = {
   ],
   medicalHistory: [
     {
-      condition: "Type 2 Diabetes Mellitus",
-      notes: "Diagnosed after routine bloodwork showed elevated HbA1c of 7.8%",
+      condition: "Cerebral Cavernous Malformation",
+      notes: "Diagnosed after MRI clinical features of venous lesions along the cerebellum.",
       date: "2020-03-15",
     },
     {
-      condition: "Essential Hypertension",
-      notes: "Consistently elevated BP readings >140/90 mmHg over 3 months",
+      condition: "Epileptic Seizure",
+      notes: "Patient experienced a witnessed tonic-clonic seizure consistent with epilepsy, confirmed by EEG findings and clinical history.",
       date: "2019-11-22",
     },
-    { condition: "Appendectomy", notes: "Laparoscopic procedure, no complications", date: "2010-07-08" },
+    { condition: "Intracranial Hemorrhage", notes: "CT scan confirmed acute intracranial hemorrhage, with patient presenting neurological deficits consistent with the site of bleeding.", date: "2010-07-08" },
   ],
   medicationEffectiveness: [
     {
-      medication: "Metformin",
+      medication: "Carbamazepine",
       effectiveness: "Good glycemic control. HbA1c reduced from 7.8% to 6.5% within 6 months.",
       sideEffects: "Initial GI discomfort that resolved after 2 weeks",
     },
